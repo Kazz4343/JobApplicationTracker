@@ -45,7 +45,7 @@ async function connectDB () {
     cached.promise = null;
     throw e;
   }
-
+  console.log("Connecting to MongoDB...");
   return cached.conn;
 }
 

@@ -32,7 +32,7 @@ export default function SignUp () {
             password
           })
           if (result.error) {
-            setError(result.error.message ?? "Failed to sign in")
+            setError(result.error.message ?? "Failed to sign up")
           } else {
             router.push('/dashboard')
           }
@@ -91,7 +91,7 @@ export default function SignUp () {
                     <Label htmlFor="password">Password</Label>
                     <Input 
                       id='password' 
-                      type="text" 
+                      type="password" 
                       placeholder="**********"
                       minLength={8} 
                       required
